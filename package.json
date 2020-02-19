@@ -1,0 +1,23 @@
+{
+  "name": "ebook-seller",
+  "version": "1.0.0",
+  "description": "Simple stripe integration project",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "npx nodemon app.js"
+  },
+  "author": "Yaroslav Kuts",
+  "license": "MIT",
+  "dependencies": {
+    "@sendgrid/mail": "^6.5.2",
+    "body-parser": "^1.19.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-handlebars": "^3.1.0",
+    "stripe": "^8.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}

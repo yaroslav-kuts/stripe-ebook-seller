@@ -1,0 +1,28 @@
+<section class="py-2">
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <h1 class="display-3 mt-3 pt-5">
+        Secret Knowledge Ebook
+      </h1>
+      <p class="lead">learn how to walk through the walls</p>
+      <form action="/charge" method="POST">
+        <script
+          src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+          data-key="{{publishableKey}}"
+          data-amount="1500"
+          data-name="Secret Knowledge Ebook"
+          data-description="Secret Knowledge Ebook"
+          data-image="/img/eye.png"
+          data-locale="auto">
+        </script>
+        <script>
+          document.querySelector('.stripe-button-el').style.display = 'none';
+        </script>
+        <button type="submit" class="btn btn-outline-dark text-white btn-lg">Only For $15</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <img src="/img/eye.png" alt="" class="img-fluid">
+    </div>
+  </div>
+</section>
