@@ -4,6 +4,10 @@ Node.js/ Express app that uses:
 1) The Stripe API to perform payment
 2) The Sendgrid API to send ebook on email
 
+## Live
+
+https://stormy-atoll-42388.herokuapp.com/
+
 ## Usage
 
 ### Create .env file and add your API keys:
