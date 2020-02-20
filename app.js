@@ -35,6 +35,8 @@ app.post('/charge', async (req, res) => {
         email: req.body.stripeEmail,
         source: req.body.stripeToken
     });
+    
+    /* customer id can be stored to the database for futher reusing */
 
     const charge = await stripe.charges.create({
         amount: BOOK_PRICE,
